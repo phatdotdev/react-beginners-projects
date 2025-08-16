@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #1b1b1b;
+}
+
+.calculator {
+  position: relative;
+  display: grid;
+}
+
+.calculator .value {
+  grid-column: span 4;
+  color: white;
+  height: 100px;
+  text-align: right;
+  outline: none;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #333333;
+}
+
+.calculator span {
+  display: grid;
+  height: 60px;
+  background-color: #292929;
+  place-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #fff;
+  cursor: pointer;
+}
+
+.calculator span:active {
+  background-color: rgb(255, 163, 36);
+  color: #fff;
+}
+
+.calculator span.clear {
+  grid-column: span 2;
+  background-color: rgb(255, 163, 26);
+}
+
+.calculator span.plus {
+  grid-row: span 2;
+  height: 120px;
+}
+
+.calculator span.equal {
+  background-color: rgb(255, 163, 26);
+}
